@@ -1,4 +1,5 @@
-# XVideos PornHub RedTube API
+# XVideos PornHub RedTu
+be API
 
 This script scrapes the HTML from different web pages to get the information from the video and you can use it in your own video player.
 
@@ -7,9 +8,9 @@ This script scrapes the HTML from different web pages to get the information fro
 - Get video sources (MP4, HLS)
 - Get thumbnail (poster)
 - Get thumbnails for preview (VTT)
-- Add new sites / servers
+- Add new sites / u
 - Data caching
-
+n zu
 ## Installation
 
 Copy the [dir](/src) to the root of a web server running PHP 7.
@@ -30,6 +31,10 @@ Only get requests are accepted, so data can be entered directly in url
 <?php
 
 $data = file_get_contents('https://appsdev.cyou/xv-ph-rt/api/?site_id=xvideos&video_id=59934029');
+
+
+
+
 
 echo '<pre>';
 echo json_encode(json_decode($data), JSON_PRETTY_PRINT);
@@ -56,9 +61,11 @@ Output
 
 [https://appsdev.cyou/xv-ph-rt/](https://appsdev.cyou/xv-ph-rt/)
 
+
 ## How to add more sites / servers
 
-There's a file [sources.json](src/servers/sources.json), that has the information of all the sites to which the HTML will be extracted, in this it's indicated all the data that can be extracted to the site, for example, HLS, MP4, thumbnails.
+There's a file [sources.json](src/serve
+rs/rces.json), that has the information of all the sites to which the HTML will be extracted, in this it's indicated all the data that can be extracted to the site, for example, HLS, MP4, thumbnails.
 
 > It's recommended that the sites have different IP addresses.
 
